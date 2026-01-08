@@ -9,7 +9,7 @@ Demo the app here: [https://tsbsankara-kanban-board.vercel.app/](https://tsbsank
 1. Drag and drop using Dnd-Kit
 2. Create and delete boards
 3. Create, reorder and delete tasks
-4. Create, reoder and delete subtasks
+4. Create, reorder and delete subtasks
 5. Auth using Clerk
 6. Convex reactive database
 
