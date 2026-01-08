@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+:root {
+  font-family: "Geist", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+/* Default - Dark Theme */
+body {
+  @apply bg-slate-950 dark:text-slate-100;
+}
+
+button {
+  cursor: pointer;
+}
+
+input,
+textarea,
+select {
+  @apply bg-slate-800 border-slate-600 text-slate-100 placeholder-slate-400;
+}
+
+/* Base scrollbar width */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+/* Dark theme scrollbars */
+::-webkit-scrollbar-track {
+  background-color: #1e293b;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #475569;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #64748b;
+}
+
+/* Light theme scrollbars */
+[data-theme="light"] ::-webkit-scrollbar-track {
+  background-color: #e2e8f0;
+}
+[data-theme="light"] ::-webkit-scrollbar-thumb {
+  background-color: #94a3b8;
+}
+[data-theme="light"] ::-webkit-scrollbar-thumb:hover {
+  background-color: #64748b;
+}
+
+/* Light Theme Overrides */
+[data-theme="light"] body {
+  @apply bg-slate-50 text-slate-900;
+}
+
+[data-theme="light"] input,
+[data-theme="light"] textarea,
+[data-theme="light"] select {
+  @apply bg-slate-100 border-slate-300 text-slate-900 placeholder-slate-500;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+  .column-card {
+    width: 280px;
+    min-width: 280px;
+  }
+}
+@media (max-width: 640px) {
+  .column-card {
+    width: 260px;
+    min-width: 260px;
+  }
+}
